@@ -30,9 +30,9 @@ public enum Router: URLRequestConvertible {
     
     public var path: String {
         switch self {
-        case .Search:
-            return "/v1/gifs/trending"
         case .TrendingGifs:
+            return "/v1/gifs/trending"
+        case .Search:
             return "/v1/gifs/search"
         }
     }
@@ -60,4 +60,23 @@ public enum Router: URLRequestConvertible {
         
         return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: parameters).0
     }
+}
+
+
+class GiphyAPI {
+    /**
+     Performs the GET request for Trending GIFs API
+     */
+    class func trendingGIFs(complention: ([Gif]?, ErrorType?) -> Void) {
+        Alamofire.request(Router.TrendingGifs())
+            .responseArray("data", completionHandler: complention)
+    }
+    
+    /**
+     Performs the GET request for Search API
+     */
+    class func search(query: String, complention: ([Gif]?, ErrorType?) -> Void) {
+        Alamofire.request(Router.Search(query))
+            .responseArray("data", completionHandler: complention)
+        }
 }
