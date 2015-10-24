@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import Alamofire
 
 /**
@@ -22,8 +21,7 @@ public enum Router: URLRequestConvertible {
     
     var method: Alamofire.Method {
         switch self {
-        case .Search,
-        .TrendingGifs:
+        case .Search, .TrendingGifs:
             return .GET
         }
     }

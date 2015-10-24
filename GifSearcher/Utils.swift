@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  Utils.swift
 //  GifSearcher
 //
 //  Created by Giorgia Marenda on 10/23/15.

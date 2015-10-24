@@ -12,10 +12,11 @@ import ObjectMapper
 
 class Gif: Mappable  {
     
-    var id:     String?
-    var type:   String?
-    var url:    String?
-    var images: [Image]?
+    var id:         String?
+    var type:       String?
+    var url:        String?
+    var caption:    String?
+    var images: Images?
     
     required init?(_ map: Map){
         
@@ -25,11 +26,12 @@ class Gif: Mappable  {
         id      <- map["id"]
         type    <- map["type"]
         url     <- map["url"]
+        caption <- map["caption"]
         images  <- map["images"]
     }
 }
 
-class Image: Mappable  {
+class Images: Mappable  {
     
     var original:           Media?
     var fixedHeight:        Media?

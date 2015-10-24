@@ -16,8 +16,9 @@
 		C76AE7311BDAED00005FA483 /* GifSearcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7301BDAED00005FA483 /* GifSearcherUITests.swift */; };
 		C76AE73F1BDAF962005FA483 /* GifsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE73E1BDAF962005FA483 /* GifsCollectionViewController.swift */; };
 		C76AE7411BDAF9DC005FA483 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7401BDAF9DC005FA483 /* GiphyAPI.swift */; };
-		C76AE7431BDAFB57005FA483 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7421BDAFB56005FA483 /* Extensions.swift */; };
+		C76AE7431BDAFB57005FA483 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7421BDAFB56005FA483 /* Utils.swift */; };
 		C76AE7451BDAFCB1005FA483 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7441BDAFCB1005FA483 /* Model.swift */; };
+		C7FFA5EB1BDB25E20071E5A5 /* GifDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFA5EA1BDB25E20071E5A5 /* GifDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		C76AE7321BDAED00005FA483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76AE73E1BDAF962005FA483 /* GifsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifsCollectionViewController.swift; sourceTree = "<group>"; };
 		C76AE7401BDAF9DC005FA483 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
-		C76AE7421BDAFB56005FA483 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C76AE7421BDAFB56005FA483 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C76AE7441BDAFCB1005FA483 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C7FFA5EA1BDB25E20071E5A5 /* GifDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifDetailViewController.swift; sourceTree = "<group>"; };
 		E441F3CA232533E20F6BB100 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ECDE9DA0A0AB116C7FB19692 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,13 +122,14 @@
 			children = (
 				C76AE7101BDAECFF005FA483 /* AppDelegate.swift */,
 				C76AE73E1BDAF962005FA483 /* GifsCollectionViewController.swift */,
+				C7FFA5EA1BDB25E20071E5A5 /* GifDetailViewController.swift */,
 				C76AE7141BDAECFF005FA483 /* Main.storyboard */,
 				C76AE7171BDAECFF005FA483 /* Assets.xcassets */,
 				C76AE7191BDAECFF005FA483 /* LaunchScreen.storyboard */,
 				C76AE71C1BDAECFF005FA483 /* Info.plist */,
 				C76AE7401BDAF9DC005FA483 /* GiphyAPI.swift */,
 				C76AE7441BDAFCB1005FA483 /* Model.swift */,
-				C76AE7421BDAFB56005FA483 /* Extensions.swift */,
+				C76AE7421BDAFB56005FA483 /* Utils.swift */,
 			);
 			path = GifSearcher;
 			sourceTree = "<group>";
@@ -341,8 +344,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76AE7451BDAFCB1005FA483 /* Model.swift in Sources */,
-				C76AE7431BDAFB57005FA483 /* Extensions.swift in Sources */,
+				C76AE7431BDAFB57005FA483 /* Utils.swift in Sources */,
 				C76AE7411BDAF9DC005FA483 /* GiphyAPI.swift in Sources */,
+				C7FFA5EB1BDB25E20071E5A5 /* GifDetailViewController.swift in Sources */,
 				C76AE7111BDAECFF005FA483 /* AppDelegate.swift in Sources */,
 				C76AE73F1BDAF962005FA483 /* GifsCollectionViewController.swift in Sources */,
 			);
