@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.8862745098" green="0.3411764706" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
@@ -50,13 +51,14 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LkH-KQ-d4n">
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                             <animations/>
+                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
                                     </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <animations/>
-                                <color key="backgroundColor" red="0.69019607839999997" green="0.89019607840000003" blue="0.92156862750000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="LkH-KQ-d4n" secondAttribute="trailing" id="7Sl-1j-Ihb"/>
                                     <constraint firstItem="LkH-KQ-d4n" firstAttribute="leading" secondItem="AKs-jR-nSt" secondAttribute="leading" id="9Wu-VG-Owz"/>
@@ -69,7 +71,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="00y-ma-5Qe">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewHeader" id="00y-ma-5Qe" customClass="HeaderView" customModule="GifSearcher" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -82,12 +84,16 @@
                                 </label>
                             </subviews>
                             <animations/>
+                            <color key="tintColor" red="0.8862745098" green="0.3411764706" blue="0.29803921570000003" alpha="0.20105698529411764" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="udQ-VA-TMY" firstAttribute="top" secondItem="00y-ma-5Qe" secondAttribute="topMargin" constant="3" id="JcE-ks-MdS"/>
                                 <constraint firstItem="udQ-VA-TMY" firstAttribute="leading" secondItem="00y-ma-5Qe" secondAttribute="leadingMargin" id="Rja-6z-TUB"/>
                                 <constraint firstItem="udQ-VA-TMY" firstAttribute="centerY" secondItem="00y-ma-5Qe" secondAttribute="centerY" id="evQ-Gp-388"/>
                                 <constraint firstItem="udQ-VA-TMY" firstAttribute="trailing" secondItem="00y-ma-5Qe" secondAttribute="trailingMargin" id="nlG-wq-sqN"/>
                             </constraints>
+                            <connections>
+                                <outlet property="titleLabel" destination="udQ-VA-TMY" id="srU-hl-cU0"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="JZv-IK-wk5" id="WHB-im-BW2"/>
@@ -96,28 +102,6 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="PLl-u5-eOE">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="UpH-3F-yd6">
-                            <rect key="frame" x="148" y="6" width="304" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZu-XX-FpJ">
-                                    <rect key="frame" x="0.0" y="1" width="304" height="30"/>
-                                    <animations/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                            </subviews>
-                            <animations/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="nZu-XX-FpJ" firstAttribute="top" secondItem="UpH-3F-yd6" secondAttribute="top" constant="1" id="FmF-uY-cz9"/>
-                                <constraint firstAttribute="bottom" secondItem="nZu-XX-FpJ" secondAttribute="bottom" constant="2" id="LPe-2N-qSX"/>
-                                <constraint firstAttribute="trailing" secondItem="nZu-XX-FpJ" secondAttribute="trailing" id="prs-FX-45F"/>
-                                <constraint firstItem="nZu-XX-FpJ" firstAttribute="leading" secondItem="UpH-3F-yd6" secondAttribute="leading" id="r8T-a2-UtP"/>
-                            </constraints>
-                        </view>
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Ddw-FQ-fmn"/>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMv-5T-0o4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,20 +121,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vkW-Yi-RAW">
-                                <rect key="frame" x="40" y="36" width="520" height="365"/>
+                                <rect key="frame" x="40" y="30" width="520" height="365"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="365" id="9mH-1a-FNX"/>
+                                    <constraint firstAttribute="height" priority="750" constant="365" id="9mH-1a-FNX"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-Mg-xU3">
-                                <rect key="frame" x="40" y="411" width="520" height="60"/>
+                                <rect key="frame" x="40" y="405" width="520" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYN-qR-g0k">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.70588235290000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Share SMS"/>
+                                        <state key="normal" title="Share SMS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="5"/>
@@ -165,7 +151,9 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.27058823529999998" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Copy on Clipboard"/>
+                                        <state key="normal" title="Copy on Clipboard">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="5"/>
@@ -186,9 +174,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vkW-Yi-RAW" secondAttribute="trailing" constant="40" id="0Xs-n0-GQe"/>
-                            <constraint firstItem="vkW-Yi-RAW" firstAttribute="top" secondItem="tbT-4a-RUg" secondAttribute="bottom" constant="36" id="9fv-dj-u82"/>
+                            <constraint firstItem="vkW-Yi-RAW" firstAttribute="top" secondItem="tbT-4a-RUg" secondAttribute="bottom" constant="30" id="9fv-dj-u82"/>
                             <constraint firstItem="eGN-Mg-xU3" firstAttribute="top" secondItem="vkW-Yi-RAW" secondAttribute="bottom" constant="10" id="CZP-CI-OHC"/>
                             <constraint firstAttribute="trailing" secondItem="eGN-Mg-xU3" secondAttribute="trailing" constant="40" id="Cav-Rp-yp5"/>
+                            <constraint firstItem="tqN-NF-jsl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eGN-Mg-xU3" secondAttribute="bottom" constant="10" id="GL5-c1-3y3"/>
                             <constraint firstItem="eGN-Mg-xU3" firstAttribute="leading" secondItem="9LB-kD-MGe" secondAttribute="leading" constant="40" id="cMW-lm-xEC"/>
                             <constraint firstItem="vkW-Yi-RAW" firstAttribute="leading" secondItem="9LB-kD-MGe" secondAttribute="leading" constant="40" id="iec-wy-82w"/>
                         </constraints>
@@ -202,5 +191,5 @@
             <point key="canvasLocation" x="608" y="159"/>
         </scene>
     </scenes>
-    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+    <color key="tintColor" red="0.8862745098" green="0.3411764706" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
 </document>
