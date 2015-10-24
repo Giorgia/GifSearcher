@@ -17,6 +17,7 @@
 		C76AE73F1BDAF962005FA483 /* GifsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE73E1BDAF962005FA483 /* GifsCollectionViewController.swift */; };
 		C76AE7411BDAF9DC005FA483 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7401BDAF9DC005FA483 /* GiphyAPI.swift */; };
 		C76AE7431BDAFB57005FA483 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7421BDAFB56005FA483 /* Extensions.swift */; };
+		C76AE7451BDAFCB1005FA483 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE7441BDAFCB1005FA483 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C76AE73E1BDAF962005FA483 /* GifsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifsCollectionViewController.swift; sourceTree = "<group>"; };
 		C76AE7401BDAF9DC005FA483 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
 		C76AE7421BDAFB56005FA483 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C76AE7441BDAFCB1005FA483 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E441F3CA232533E20F6BB100 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ECDE9DA0A0AB116C7FB19692 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				C76AE7191BDAECFF005FA483 /* LaunchScreen.storyboard */,
 				C76AE71C1BDAECFF005FA483 /* Info.plist */,
 				C76AE7401BDAF9DC005FA483 /* GiphyAPI.swift */,
+				C76AE7441BDAFCB1005FA483 /* Model.swift */,
 				C76AE7421BDAFB56005FA483 /* Extensions.swift */,
 			);
 			path = GifSearcher;
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76AE7451BDAFCB1005FA483 /* Model.swift in Sources */,
 				C76AE7431BDAFB57005FA483 /* Extensions.swift in Sources */,
 				C76AE7411BDAF9DC005FA483 /* GiphyAPI.swift in Sources */,
 				C76AE7111BDAECFF005FA483 /* AppDelegate.swift in Sources */,
